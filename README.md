@@ -1,5 +1,5 @@
 # Cadaver-GUI
-GUI for cadaver - a command-line WebDAV client
+GUI for [cadaver](https://notroj.github.io/cadaver/) - a command-line WebDAV client
 
 + Copies files (you can select Ctrl+Mouse) from the computer to the cloud and back
 + Creates directories, renames/deletes directories/files in the cloud
