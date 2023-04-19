@@ -1,0 +1,18 @@
+{"version":1,"strings":[
+{"hash":210658841,"name":"tmainform.caption","sourcebytes":[67,97,100,97,118,101,114,45,71,85,73],"value":"Cadaver-GUI"},
+{"hash":90721266,"name":"tmainform.panel2.caption","sourcebytes":[80,97,110,101,108,50],"value":"Panel2"},
+{"hash":105368674,"name":"tmainform.groupbox1.caption","sourcebytes":[99,111,109,112,117,116,101,114],"value":"computer"},
+{"hash":187670852,"name":"tmainform.copyfrompc.hint","sourcebytes":[67,111,112,121,32,116,111,32,67,108,111,117,100],"value":"Copy to Cloud"},
+{"hash":218754514,"name":"tmainform.mkpcdirbtn.hint","sourcebytes":[67,114,101,97,116,101,32,110,101,119,32,102,111,108,100,101,114],"value":"Create new folder"},
+{"hash":96905381,"name":"tmainform.updatebtn.hint","sourcebytes":[85,112,100,97,116,101],"value":"Update"},
+{"hash":46,"name":"tmainform.groupbox2.caption","sourcebytes":[46],"value":"."},
+{"hash":255359538,"name":"tmainform.copyfrombucket.hint","sourcebytes":[67,111,112,121,32,116,111,32,99,111,109,112,117,116,101,114],"value":"Copy to computer"},
+{"hash":195296268,"name":"tmainform.selectallbtn.hint","sourcebytes":[83,101,108,101,99,116,32,97,108,108],"value":"Select all"},
+{"hash":231525187,"name":"tmainform.delbtn.hint","sourcebytes":[68,101,108,101,116,101,32,70,105,108,101,115,47,70,111,108,100,101,114,115],"value":"Delete Files/Folders"},
+{"hash":72268412,"name":"tmainform.upbtn.hint","sourcebytes":[85,112,112,101,114,32,108,101,118,101,108],"value":"Upper level"},
+{"hash":203147923,"name":"tmainform.settingsbtn.hint","sourcebytes":[67,111,110,110,101,99,116,105,111,110,32,83,101,116,116,105,110,103,115],"value":"Connection Settings"},
+{"hash":177007714,"name":"tmainform.addbtn.hint","sourcebytes":[67,114,101,97,116,101,32,97,32,110,101,119,32,102,111,108,100,101,114],"value":"Create a new folder"},
+{"hash":4691652,"name":"tmainform.infobtn.hint","sourcebytes":[65,98,111,117,116],"value":"About"},
+{"hash":18276498,"name":"tmainform.renamebtn.hint","sourcebytes":[82,101,110,97,109,101,32,70,105,108,101,47,70,111,108,100,101,114],"value":"Rename File/Folder"},
+{"hash":90721265,"name":"tmainform.panel1.caption","sourcebytes":[80,97,110,101,108,49],"value":"Panel1"}
+]}

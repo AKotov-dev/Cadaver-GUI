@@ -1,0 +1,147 @@
+msgid ""
+msgstr "Content-Type: text/plain; charset=UTF-8"
+
+#: taboutform.caption
+msgctxt "taboutform.caption"
+msgid "About"
+msgstr ""
+
+#: taboutform.label1.caption
+msgid "Cadaver-GUI vX.X"
+msgstr ""
+
+#: taboutform.label2.caption
+msgid ""
+"GUI for Command Line Client cadaver\n"
+"  \n"
+"License: GPLv3\n"
+"Compilation: Lazarus 2.2.4\n"
+"Author: alex_q_2000 (C) 2023\n"
+"  \n"
+"Russian Linux Forum: https://linuxforum.ru"
+msgstr ""
+
+#: tconfigform.caption
+msgid "Configuration"
+msgstr ""
+
+#: tconfigform.label1.caption
+msgid "Login:"
+msgstr ""
+
+#: tconfigform.label2.caption
+msgid "Password:"
+msgstr ""
+
+#: tconfigform.label3.caption
+msgid "Server:"
+msgstr ""
+
+#: tmainform.addbtn.hint
+msgctxt "tmainform.addbtn.hint"
+msgid "Create a new folder"
+msgstr ""
+
+#: tmainform.caption
+msgid "Cadaver-GUI"
+msgstr ""
+
+#: tmainform.copyfrombucket.hint
+msgid "Copy to computer"
+msgstr ""
+
+#: tmainform.copyfrompc.hint
+msgid "Copy to Cloud"
+msgstr ""
+
+#: tmainform.delbtn.hint
+msgid "Delete Files/Folders"
+msgstr ""
+
+#: tmainform.groupbox1.caption
+msgid "computer"
+msgstr ""
+
+#: tmainform.groupbox2.caption
+msgid "."
+msgstr ""
+
+#: tmainform.infobtn.hint
+msgctxt "tmainform.infobtn.hint"
+msgid "About"
+msgstr ""
+
+#: tmainform.mkpcdirbtn.hint
+msgid "Create new folder"
+msgstr ""
+
+#: tmainform.panel1.caption
+msgid "Panel1"
+msgstr ""
+
+#: tmainform.panel2.caption
+msgid "Panel2"
+msgstr ""
+
+#: tmainform.renamebtn.hint
+msgctxt "tmainform.renamebtn.hint"
+msgid "Rename File/Folder"
+msgstr ""
+
+#: tmainform.selectallbtn.hint
+msgid "Select all"
+msgstr ""
+
+#: tmainform.settingsbtn.hint
+msgid "Connection Settings"
+msgstr ""
+
+#: tmainform.upbtn.hint
+msgid "Upper level"
+msgstr ""
+
+#: tmainform.updatebtn.hint
+msgid "Update"
+msgstr ""
+
+#: unit1.sbucketname
+msgid "Directory name:"
+msgstr ""
+
+#: unit1.scancelcopyng
+msgid "Esc - cancel... "
+msgstr ""
+
+#: unit1.sclosequery
+msgid "Copying is in progress! Finish the process?"
+msgstr ""
+
+#: unit1.screatedir
+msgid "Create directory"
+msgstr ""
+
+#: unit1.sdelete
+msgid "Delete selected object(s)?"
+msgstr ""
+
+#: unit1.sinputname
+msgid "Enter the name:"
+msgstr ""
+
+#: unit1.snewbucket
+msgctxt "unit1.snewbucket"
+msgid "Create a new directory"
+msgstr ""
+
+#: unit1.sobjectexists
+msgid "The folder already exists!"
+msgstr ""
+
+#: unit1.soverwriteobject
+msgid "Overwrite existing objects?"
+msgstr ""
+
+#: unit1.srename
+msgid "Rename an object"
+msgstr ""
+

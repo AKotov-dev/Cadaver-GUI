@@ -1,0 +1,6 @@
+{"version":1,"strings":[
+{"hash":116154878,"name":"tconfigform.caption","sourcebytes":[67,111,110,102,105,103,117,114,97,116,105,111,110],"value":"Configuration"},
+{"hash":87416858,"name":"tconfigform.label1.caption","sourcebytes":[76,111,103,105,110,58],"value":"Login:"},
+{"hash":179191546,"name":"tconfigform.label2.caption","sourcebytes":[80,97,115,115,119,111,114,100,58],"value":"Password:"},
+{"hash":164219914,"name":"tconfigform.label3.caption","sourcebytes":[83,101,114,118,101,114,58],"value":"Server:"}
+]}

@@ -1,0 +1,78 @@
+object ACLForm: TACLForm
+  Left = 305
+  Height = 146
+  Top = 126
+  Width = 442
+  ActiveControl = OkBtn
+  Caption = 'ACL'
+  ClientHeight = 146
+  ClientWidth = 442
+  KeyPreview = True
+  OnCreate = FormCreate
+  OnKeyUp = FormKeyUp
+  OnShow = FormShow
+  Position = poMainFormCenter
+  LCLVersion = '2.2.4.0'
+  object RadioGroup1: TRadioGroup
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = Owner
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    Left = 8
+    Height = 89
+    Top = 8
+    Width = 426
+    Anchors = [akTop, akLeft, akRight]
+    AutoFill = True
+    BorderSpacing.Left = 8
+    BorderSpacing.Top = 8
+    BorderSpacing.Right = 8
+    ChildSizing.LeftRightSpacing = 6
+    ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+    ChildSizing.EnlargeVertical = crsHomogenousChildResize
+    ChildSizing.ShrinkHorizontal = crsScaleChilds
+    ChildSizing.ShrinkVertical = crsScaleChilds
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 1
+    ClientHeight = 87
+    ClientWidth = 424
+    ItemIndex = 0
+    Items.Strings = (
+      'Public access [READ, recursive, --acl-public]'
+      'Private access [READ, recursive,  --acl-private]'
+    )
+    TabOrder = 0
+  end
+  object CloseBtn: TBitBtn
+    AnchorSideTop.Control = OkBtn
+    AnchorSideRight.Control = OkBtn
+    AnchorSideBottom.Control = OkBtn
+    AnchorSideBottom.Side = asrBottom
+    Left = 212
+    Height = 35
+    Top = 105
+    Width = 110
+    Anchors = [akTop, akRight, akBottom]
+    BorderSpacing.Right = 2
+    DefaultCaption = True
+    Kind = bkClose
+    ModalResult = 11
+    TabOrder = 1
+  end
+  object OkBtn: TBitBtn
+    AnchorSideTop.Control = RadioGroup1
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Side = asrBottom
+    Left = 324
+    Height = 35
+    Top = 105
+    Width = 110
+    Anchors = [akTop, akRight]
+    BorderSpacing.Top = 8
+    Default = True
+    DefaultCaption = True
+    Kind = bkOK
+    ModalResult = 1
+    TabOrder = 2
+  end
+end

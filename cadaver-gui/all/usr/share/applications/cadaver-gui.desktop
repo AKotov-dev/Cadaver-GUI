@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Cadaver-GUI
+Comment=File sharing via WebDAV
+Comment[ru]=Обмен файлами по WebDAV
+Icon=cadaver-gui
+Exec=/usr/share/cadaver-gui/cadaver_gui
+Type=Application
+Categories=Network;FileTransfer;GTK;
+Terminal=false
