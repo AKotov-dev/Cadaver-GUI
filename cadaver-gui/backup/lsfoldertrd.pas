@@ -58,16 +58,23 @@ begin
     //Вариант-2
     //Разделяем 4-ре последних столбца ";" и выводим цельный столбец-1 с заменой "Coll: " на "/"
     //https://question-it.com/questions/4338789/awk-vyvesti-vse-krome-poslednih-n-stolbtsov
-    ExProcess.Parameters.Add('echo -e "cd ' + '''' + MainForm.GroupBox2.Caption +
-      '''' + '\nls" | cadaver ' + Server + ' | grep -E "^Coll:|^ " | awk ' +
-      '''' + '{for (i=1;i<NF;i++) printf "%s%s",$i,(i+5>NF?";":FS);print $NF}' +
-      '''' + ' | sed "s/^Coll: /\//" | cut -d";" -f1');
+    //ExProcess.Parameters.Add('echo -e "cd ' + '''' + MainForm.GroupBox2.Caption +
+    //  '''' + '\nls" | cadaver ' + Server + ' | grep -E "^Coll:|^ " | awk ' +
+    //  '''' + '{for (i=1;i<NF;i++) printf "%s%s",$i,(i+5>NF?";":FS);print $NF}' +
+    //  '''' + ' | sed "s/^Coll: /\//" | cut -d";" -f1');
 
     //Вариант-3
     //ExProcess.Parameters.Add('echo -e "cd ' + '''' + MainForm.GroupBox2.Caption +
     //  '''' + '\nls" | cadaver ' + Server + ' | grep -E "^Coll:|^ " | awk ' +
     //  '''' + '{ last=";"$(NF-2)";"$(NF-1)";"$NF; NF-=4; print $0 last}' +
     //  '''' + ' | sed "s/^Coll: /\//" | cut -d";" -f1');
+
+    //Вариант-4
+    ExProcess.Parameters.Add('echo -e "cd ' + '''' + MainForm.GroupBox2.Caption +
+      '''' + '\nls" | cadaver ' + Server +
+      ' | grep -E "^Coll:|^ " | rev | sed -r "s/(\s+)?\S+//1" | sed -r "s/(\s+)?\S+//1" | '
+      + 'sed -r "s/(\s+)?\S+//1" | sed -r "s/(\s+)?\S+//1" | rev | sed "s/^ *//" |  sed "s/ *$//" | sed "s/^Coll:   /\//"');
+
 
     ExProcess.Execute;
     S.LoadFromStream(ExProcess.Output);
@@ -109,6 +116,7 @@ begin
 
     ProgressBar1.Style := pbstNormal;
     ProgressBar1.Repaint;
+    Application.ProcessMessages;
   end;
 end;
 

@@ -59,8 +59,10 @@
         <Filename Value="lsfoldertrd.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="LSFolderTRD"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="2"/>
-        <CursorPos X="20"/>
+        <TopLine Value="67"/>
+        <CursorPos X="58" Y="79"/>
         <UsageCount Value="58"/>
         <Loaded Value="True"/>
       </Unit2>
@@ -68,9 +70,8 @@
         <Filename Value="s3commandtrd.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="S3CommandTRD"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="3"/>
-        <TopLine Value="112"/>
+        <TopLine Value="111"/>
         <CursorPos X="57" Y="136"/>
         <UsageCount Value="53"/>
         <Loaded Value="True"/>
