@@ -3,7 +3,7 @@ GUI for cadaver - a command-line WebDAV client
 
 + Copies files (you can select Ctrl+Mouse) from the computer to the cloud and back
 + Creates directories, renames/deletes directories/files in the cloud
-- Copying directories `cadaver` does not understand, only `files`
++ Copying directories `cadaver` does not understand, only `files`
 
 **Dependencies:** gtk2 cadaver
 
