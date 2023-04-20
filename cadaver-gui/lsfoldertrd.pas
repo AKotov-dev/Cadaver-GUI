@@ -75,7 +75,7 @@ begin
     ExProcess.Parameters.Add('echo -e "cd ' + '''' + MainForm.GroupBox2.Caption +
       '''' + '\nls" | cadaver ' + Server +
       ' | grep -E "^Coll:|^ " | rev | sed -r "s/(\s+)?\S+//1" | sed -r "s/(\s+)?\S+//1" | '
-      + 'sed -r "s/(\s+)?\S+//1" | sed -r "s/(\s+)?\S+//1" | rev | sed "s/^ *//" |  sed "s/ *$//" | sed "s/^Coll:   /\//"');
+      + 'sed -r "s/(\s+)?\S+//1" | sed -r "s/(\s+)?\S+//1" | rev | sed "s/^ *//" | sed "s/ *$//" | sed "s/^Coll:   /\//"');
 
 
     ExProcess.Execute;

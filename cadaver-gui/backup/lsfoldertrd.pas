@@ -94,7 +94,7 @@ end;
 procedure StartLSFolder.ShowProgress;
 begin
   MainForm.ProgressBar1.Style := pbstMarquee;
-  MainForm.ProgressBar1.Refresh;
+  MainForm.ProgressBar1.Repaint;
   Application.ProcessMessages;
 end;
 
