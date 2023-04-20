@@ -5,7 +5,7 @@ GUI for [cadaver](https://notroj.github.io/cadaver/) - a command-line WebDAV cli
 + Creates directories, renames/deletes directories/files in the cloud
 + Copying directories `cadaver` does not understand, only `files`
 
-**Dependencies:** gtk2 cadaver procps-ng
+**Dependencies:** gtk2 cadaver
 
 After launching, click the `Gear` and enter the `Server` (you can choose from the list), `Login` (for example, this is mail) and `Password` (for example, Mail.ru - this is the password of external applications).
 
