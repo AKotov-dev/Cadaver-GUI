@@ -7,7 +7,7 @@ interface
 uses
   Classes, SysUtils, Forms, Controls, Graphics, Dialogs, ExtCtrls, StdCtrls,
   ShellCtrls, Buttons, ComCtrls, IniPropStorage, Types, Process,
-  LCLType, DefaultTranslator;
+  LCLType, DefaultTranslator, StrUtils;
 
 type
 
@@ -270,14 +270,13 @@ begin
           SDBox.Items[i]) then e := True;
 
       if Pos('/', SDBox.Items[i]) = 0 then
-        c := 'echo "get ' + '''' + GroupBox2.Caption + '/' +
-          SDBox.Items[i] + '''' + ' ' + '''' +
-          ExtractFilePath(CompDir.GetPathFromNode(CompDir.Selected)) +
-          SDBox.Items[i] + '''' + '" | cadaver ' + Server
+        c := '"get ' + '''' + GroupBox2.Caption + '/' + SDBox.Items[i] +
+          '''' + ' ' + '''' + ExtractFilePath(CompDir.GetPathFromNode(
+          CompDir.Selected)) + SDBox.Items[i] + '''' + '\n"'
       else
-        c := 'echo "Сrawling the directory: ' + SDBox.Items[i] + '"';
+        c := '"Сrawling the directory: ' + SDBox.Items[i] + '\n"';
 
-      cmd := c + '; ' + cmd;
+      cmd := c + cmd;
     end;
   end;
 
@@ -285,6 +284,11 @@ begin
   if e and (MessageDlg(SOverwriteObject, mtConfirmation, [mbYes, mbNo], 0) <>
     mrYes) then
     exit;
+
+  //Удаляем завершающий "/n"
+  Delete(cmd, Length(cmd) - 2, 2);
+
+  cmd := 'echo -e ' + cmd + ' | cadaver ' + Server;
 
   StartCmd;
 end;
@@ -409,11 +413,10 @@ begin
             e := True;
         end;
 
-      c := 'echo "put ' + '''' + CompDir.Items[i].GetTextPath +
-        '''' + ' ' + '''' + GroupBox2.Caption + '/' + CompDir.Items[i].Text +
-        '''' + '" | cadaver ' + Server;
+      c := '"put ' + '''' + CompDir.Items[i].GetTextPath + '''' +
+        ' ' + '''' + GroupBox2.Caption + '/' + CompDir.Items[i].Text + '''' + '\n"';
 
-      cmd := c + '; ' + cmd;
+      cmd := c + cmd;
     end;
   end;
 
@@ -421,6 +424,11 @@ begin
   if e and (MessageDlg(SOverwriteObject, mtConfirmation, [mbYes, mbNo], 0) <>
     mrYes) then
     exit;
+
+  //Удаляем завершающий "/n"
+  Delete(cmd, Length(cmd) - 2, 2);
+
+  cmd := 'echo -e ' + cmd + ' | cadaver ' + Server;
 
   StartCmd;
 end;
@@ -449,16 +457,21 @@ begin
     if SDBox.Selected[i] then
     begin
       if Pos('/', SDBox.Items[i]) <> 0 then
-        c := 'echo "rmcol ' + '''' + GroupBox2.Caption + SDBox.Items[i] +
-          '''' + '" | cadaver ' + Server
+        c := '"rmcol ' + '''' + GroupBox2.Caption + SDBox.Items[i] +
+          '''' + '\n"'
       else
-        c := 'echo "delete ' + '''' + GroupBox2.Caption + '/' +
-          SDBox.Items[i] + '''' + '" | cadaver ' + Server;
+        c := '"delete ' + '''' + GroupBox2.Caption + '/' +
+          SDBox.Items[i] + '''' + '\n"';
 
       //Собираем команду
-      cmd := c + '; ' + cmd;
+      cmd := c + cmd;
     end;
   end;
+
+  //Удаляем завершающий "/n"
+  Delete(cmd, Length(cmd) - 2, 2);
+
+  cmd := 'echo -e ' + cmd + ' | cadaver ' + Server;
 
   StartCmd;
 end;

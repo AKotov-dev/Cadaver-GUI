@@ -89,7 +89,7 @@ begin
     //Метка отмены копирования
     Panel4.Caption := SCancelCopyng;
     ProgressBar1.Style := pbstMarquee;
-    ProgressBar1.Refresh;
+    ProgressBar1.Repaint;
     Application.ProcessMessages;
   end;
 end;

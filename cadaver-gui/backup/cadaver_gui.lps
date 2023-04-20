@@ -40,7 +40,7 @@
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="23"/>
-        <UsageCount Value="58"/>
+        <UsageCount Value="60"/>
       </Unit0>
       <Unit1>
         <Filename Value="unit1.pas"/>
@@ -49,9 +49,9 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="Unit1"/>
-        <TopLine Value="373"/>
-        <CursorPos X="3" Y="376"/>
-        <UsageCount Value="58"/>
+        <IsVisibleTab Value="True"/>
+        <CursorPos X="29" Y="10"/>
+        <UsageCount Value="60"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit1>
@@ -59,11 +59,10 @@
         <Filename Value="lsfoldertrd.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="LSFolderTRD"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="2"/>
-        <TopLine Value="67"/>
+        <TopLine Value="55"/>
         <CursorPos X="58" Y="79"/>
-        <UsageCount Value="58"/>
+        <UsageCount Value="60"/>
         <Loaded Value="True"/>
       </Unit2>
       <Unit3>
@@ -71,9 +70,9 @@
         <IsPartOfProject Value="True"/>
         <UnitName Value="S3CommandTRD"/>
         <EditorIndex Value="3"/>
-        <TopLine Value="111"/>
+        <TopLine Value="105"/>
         <CursorPos X="57" Y="136"/>
-        <UsageCount Value="53"/>
+        <UsageCount Value="55"/>
         <Loaded Value="True"/>
       </Unit3>
       <Unit4>
@@ -85,9 +84,8 @@
         <EditorIndex Value="1"/>
         <TopLine Value="45"/>
         <CursorPos X="36" Y="66"/>
-        <UsageCount Value="51"/>
+        <UsageCount Value="53"/>
         <Loaded Value="True"/>
-        <LoadedDesigner Value="True"/>
       </Unit4>
       <Unit5>
         <Filename Value="about_unit.pas"/>
@@ -97,7 +95,7 @@
         <ResourceBaseClass Value="Form"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="20"/>
-        <UsageCount Value="45"/>
+        <UsageCount Value="47"/>
       </Unit5>
       <Unit6>
         <Filename Value="firstconnecttrd.pas"/>
@@ -150,7 +148,7 @@
         <UsageCount Value="10"/>
       </Unit11>
     </Units>
-    <JumpHistory Count="4" HistoryIndex="3">
+    <JumpHistory Count="21" HistoryIndex="20">
       <Position1>
         <Filename Value="unit1.pas"/>
         <Caret Line="210" Column="74" TopLine="205"/>
@@ -167,6 +165,74 @@
         <Filename Value="config_unit.pas"/>
         <Caret Line="58" Column="51" TopLine="58"/>
       </Position4>
+      <Position5>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="376" Column="3" TopLine="373"/>
+      </Position5>
+      <Position6>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="463" Column="22" TopLine="440"/>
+      </Position6>
+      <Position7>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="459" Column="18" TopLine="440"/>
+      </Position7>
+      <Position8>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="331" Column="3" TopLine="326"/>
+      </Position8>
+      <Position9>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="352" Column="3" TopLine="347"/>
+      </Position9>
+      <Position10>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="276" Column="38" TopLine="244"/>
+      </Position10>
+      <Position11>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="290" TopLine="250"/>
+      </Position11>
+      <Position12>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="425" Column="45" TopLine="397"/>
+      </Position12>
+      <Position13>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="10" Column="39"/>
+      </Position13>
+      <Position14>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="425" Column="45" TopLine="409"/>
+      </Position14>
+      <Position15>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="427" Column="18" TopLine="409"/>
+      </Position15>
+      <Position16>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="425" Column="3" TopLine="409"/>
+      </Position16>
+      <Position17>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="289" Column="35" TopLine="265"/>
+      </Position17>
+      <Position18>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="471" Column="42" TopLine="451"/>
+      </Position18>
+      <Position19>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="288" Column="42" TopLine="265"/>
+      </Position19>
+      <Position20>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="406" Column="56" TopLine="402"/>
+      </Position20>
+      <Position21>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="278" Column="7" TopLine="262"/>
+      </Position21>
     </JumpHistory>
     <RunParams>
       <FormatVersion Value="2"/>

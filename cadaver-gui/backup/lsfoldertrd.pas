@@ -49,7 +49,9 @@ begin
     //Ошибки не выводим, только список, ждём окончания потока
     ExProcess.Options := [poWaitOnExit, poUsePipes];
 
-    //ls текущего каталога Вариант-1
+    //ls текущего каталога
+
+    //Вариант-1
     //ExProcess.Parameters.Add('echo -e "cd ' + '''' + MainForm.GroupBox2.Caption +
     //  '''' + '\nls" | cadaver ' + Server + ' | grep -E "^Coll:|^ " | sed ' +
     //  '''' + 's/^ *//' + '''' + ' | sed ' + '''' + 's/^Coll:   /\//' +

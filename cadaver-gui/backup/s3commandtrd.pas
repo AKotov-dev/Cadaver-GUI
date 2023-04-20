@@ -132,6 +132,9 @@ begin
 
   //Курсор в конец текста
   MainForm.LogMemo.SelStart := Length(MainForm.LogMemo.Text);
+
+  //Если строк > 500 - очистить (файл может быть большим)
+  if MainForm.LogMemo.Lines.Count > 500 then MainForm.LogMemo.Clear;
 end;
 
 end.
