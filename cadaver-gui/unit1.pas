@@ -282,7 +282,11 @@ begin
 
   //Если есть совпадения (перезапись файлов)
   if e and (MessageDlg(SOverwriteObject, mtConfirmation, [mbYes, mbNo], 0) <>
-    mrYes) then exit;
+    mrYes) then
+  begin
+    cmd := '';
+    exit;
+  end;
 
   //Удаляем завершающий "/n"
   Delete(cmd, Length(cmd) - 2, 2);
@@ -294,18 +298,15 @@ end;
 
 //Предупреждение о завершении обмена с облаком, если в прогрессе
 procedure TMainForm.FormCloseQuery(Sender: TObject; var CanClose: boolean);
-var
-  S: ansistring;
 begin
-  if RunCommand('/bin/bash', ['-c', 'pidof cadaver'], S) then
-    if S <> '' then
-      if MessageDlg(SCloseQuery, mtWarning, [mbYes, mbCancel], 0) <> mrYes then
-        Canclose := False
-      else
-      begin
-        StartProcess('killall cadaver; killall cadaver');
-        CanClose := True;
-      end;
+  if cmd <> '' then
+    if MessageDlg(SCloseQuery, mtWarning, [mbYes, mbCancel], 0) <> mrYes then
+      Canclose := False
+    else
+    begin
+      StartProcess('killall cadaver; killall cadaver');
+      CanClose := True;
+    end;
 end;
 
 //Esc - отмена операций
@@ -424,7 +425,11 @@ begin
 
   //Если есть совпадения (перезапись файлов)
   if e and (MessageDlg(SOverwriteObject, mtConfirmation, [mbYes, mbNo], 0) <>
-    mrYes) then exit;
+    mrYes) then
+  begin
+    cmd := '';
+    exit;
+  end;
 
   //Удаляем завершающий "/n"
   Delete(cmd, Length(cmd) - 2, 2);

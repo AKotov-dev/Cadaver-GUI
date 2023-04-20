@@ -81,7 +81,7 @@ resourcestring
   SCreateDir = 'Create directory';
   SInputName = 'Enter the name:';
   SCancelCopyng = 'Esc - cancel... ';
-  SCloseQuery = 'Copying is in progress! Finish the process?';
+  SCloseQuery = 'Cadaver is active! Finish the process?';
   SNewBucket = 'Create a new directory';
   SBucketName = 'Directory name:';
   SRename = 'Rename an object';
