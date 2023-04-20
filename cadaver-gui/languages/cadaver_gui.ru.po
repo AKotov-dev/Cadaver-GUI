@@ -131,8 +131,8 @@ msgid "Esc - cancel... "
 msgstr "Esc - отмена "
 
 #: unit1.sclosequery
-msgid "Copying is in progress! Finish the process?"
-msgstr "Идёт копирование! Завершить процесс?"
+msgid "Cadaver is active! Finish the process?"
+msgstr "Cadaver активен! Завершить процесс?"
 
 #: unit1.screatedir
 msgid "Create directory"

@@ -113,7 +113,7 @@ msgid "Esc - cancel... "
 msgstr ""
 
 #: unit1.sclosequery
-msgid "Copying is in progress! Finish the process?"
+msgid "Cadaver is active! Finish the process?"
 msgstr ""
 
 #: unit1.screatedir

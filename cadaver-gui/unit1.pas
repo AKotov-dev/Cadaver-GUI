@@ -81,7 +81,7 @@ resourcestring
   SCreateDir = 'Create directory';
   SInputName = 'Enter the name:';
   SCancelCopyng = 'Esc - cancel... ';
-  SCloseQuery = 'Copying is in progress! Finish the process?';
+  SCloseQuery = 'Cadaver is active! Finish the process?';
   SNewBucket = 'Create a new directory';
   SBucketName = 'Directory name:';
   SRename = 'Rename an object';
@@ -282,8 +282,7 @@ begin
 
   //Если есть совпадения (перезапись файлов)
   if e and (MessageDlg(SOverwriteObject, mtConfirmation, [mbYes, mbNo], 0) <>
-    mrYes) then
-    exit;
+    mrYes) then exit;
 
   //Удаляем завершающий "/n"
   Delete(cmd, Length(cmd) - 2, 2);
@@ -295,15 +294,18 @@ end;
 
 //Предупреждение о завершении обмена с облаком, если в прогрессе
 procedure TMainForm.FormCloseQuery(Sender: TObject; var CanClose: boolean);
+var
+  S: ansistring;
 begin
-  if cmd <> '' then
-    if MessageDlg(SCloseQuery, mtWarning, [mbYes, mbCancel], 0) <> mrYes then
-      Canclose := False
-    else
-    begin
-      StartProcess('killall cadaver');
-      CanClose := True;
-    end;
+  if RunCommand('/bin/bash', ['-c', 'pidof cadaver'], S) then
+    if S <> '' then
+      if MessageDlg(SCloseQuery, mtWarning, [mbYes, mbCancel], 0) <> mrYes then
+        Canclose := False
+      else
+      begin
+        StartProcess('killall cadaver; killall cadaver');
+        CanClose := True;
+      end;
 end;
 
 //Esc - отмена операций
@@ -422,8 +424,7 @@ begin
 
   //Если есть совпадения (перезапись файлов)
   if e and (MessageDlg(SOverwriteObject, mtConfirmation, [mbYes, mbNo], 0) <>
-    mrYes) then
-    exit;
+    mrYes) then exit;
 
   //Удаляем завершающий "/n"
   Delete(cmd, Length(cmd) - 2, 2);
