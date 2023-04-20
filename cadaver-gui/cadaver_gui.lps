@@ -49,7 +49,9 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="Unit1"/>
-        <CursorPos X="13"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="309"/>
+        <CursorPos X="56" Y="317"/>
         <UsageCount Value="60"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -58,7 +60,6 @@
         <Filename Value="lsfoldertrd.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="LSFolderTRD"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="2"/>
         <CursorPos X="20"/>
         <UsageCount Value="60"/>
@@ -145,7 +146,7 @@
         <UsageCount Value="10"/>
       </Unit11>
     </Units>
-    <JumpHistory Count="21" HistoryIndex="20">
+    <JumpHistory Count="22" HistoryIndex="21">
       <Position1>
         <Filename Value="unit1.pas"/>
         <Caret Line="210" Column="74" TopLine="205"/>
@@ -230,6 +231,10 @@
         <Filename Value="unit1.pas"/>
         <Caret Line="278" Column="7" TopLine="262"/>
       </Position21>
+      <Position22>
+        <Filename Value="unit1.pas"/>
+        <Caret Column="13"/>
+      </Position22>
     </JumpHistory>
     <RunParams>
       <FormatVersion Value="2"/>

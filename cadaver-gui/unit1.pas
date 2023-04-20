@@ -314,7 +314,7 @@ begin
     //Если копирование выполняется - отменяем
     if cmd <> '' then
     begin
-      StartProcess('killall cadaver');
+      StartProcess('killall cadaver; killall cadaver');
       LogMemo.Append('Cadaver-GUI: Esc - Cancellation of the operation...');
     end;
   end;
