@@ -89,7 +89,7 @@ begin
     //Метка отмены копирования
     Panel4.Caption := SCancelCopyng;
     ProgressBar1.Style := pbstMarquee;
-    ProgressBar1.Refresh;
+    ProgressBar1.Repaint;
     Application.ProcessMessages;
   end;
 end;
@@ -106,9 +106,6 @@ begin
 
     //Метка отмены копирования
     Panel4.Caption := '';
-    //Разрешаем копирование
-    Panel4.Enabled := True;
-    Panel3.Enabled := True;
 
     //Обновление каталогов назначения (выборочно)
     if left_panel then
@@ -133,8 +130,8 @@ begin
   //Курсор в конец текста
   MainForm.LogMemo.SelStart := Length(MainForm.LogMemo.Text);
 
-  //Если строк > 500 - очистить (файл может быть большим)
-  if MainForm.LogMemo.Lines.Count > 500 then MainForm.LogMemo.Clear;
+  //Если строк > 1000 - очистить (файл может быть большим)
+  if MainForm.LogMemo.Lines.Count > 1000 then MainForm.LogMemo.Clear;
 end;
 
 end.

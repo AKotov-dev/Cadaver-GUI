@@ -2,7 +2,7 @@
 name=cadaver-gui
 
 [VERSION]
-version=0.8
+version=0.9
 
 [RELEASE]
 release=0.mrx9
@@ -63,15 +63,19 @@ toolversion=2.2.4
 [INFO]
 0=GUI for cadaver - a command-line WebDAV client
 1=
-2=v0.8
-3=+ Copying/Deleting files in one connection cycle
+2=v0.9
+3=+ Cosmetic edits of the sources
 4=+ RPM-packages for Mageia-8 (ROSA), Mageia-9, Ubuntu
 5=
-6=v0.6
-7=+ Improved getting a list of cloud files and folders
+6=v0.8
+7=+ Copying/Deleting files in one connection cycle
 8=+ RPM-packages for Mageia-8 (ROSA), Mageia-9, Ubuntu
 9=
-10=v0.5
-11=+ Improving copy operations
-12=+ Correction of the translation
-13=+ RPM-packages for Mageia-8/9
+10=v0.6
+11=+ Improved getting a list of cloud files and folders
+12=+ RPM-packages for Mageia-8 (ROSA), Mageia-9, Ubuntu
+13=
+14=v0.5
+15=+ Improving copy operations
+16=+ Correction of the translation
+17=+ RPM-packages for Mageia-8/9

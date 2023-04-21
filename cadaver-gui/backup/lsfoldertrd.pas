@@ -75,7 +75,7 @@ begin
     ExProcess.Parameters.Add('echo -e "cd ' + '''' + MainForm.GroupBox2.Caption +
       '''' + '\nls" | cadaver ' + Server +
       ' | grep -E "^Coll:|^ " | rev | sed -r "s/(\s+)?\S+//1" | sed -r "s/(\s+)?\S+//1" | '
-      + 'sed -r "s/(\s+)?\S+//1" | sed -r "s/(\s+)?\S+//1" | rev | sed "s/^ *//" |  sed "s/ *$//" | sed "s/^Coll:   /\//"');
+      + 'sed -r "s/(\s+)?\S+//1" | sed -r "s/(\s+)?\S+//1" | rev | sed "s/^ *//" | sed "s/ *$//" | sed "s/^Coll:   /\//"');
 
 
     ExProcess.Execute;
@@ -115,6 +115,10 @@ begin
     //Если список не пуст - курсор в "0"
     if SDBox.Count <> 0 then
       SDBox.ItemIndex := 0;
+
+    //Разрешаем копирование
+    Panel4.Enabled := True;
+    Panel3.Enabled := True;
 
     ProgressBar1.Style := pbstNormal;
     ProgressBar1.Repaint;

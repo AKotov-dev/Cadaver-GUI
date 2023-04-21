@@ -116,6 +116,10 @@ begin
     if SDBox.Count <> 0 then
       SDBox.ItemIndex := 0;
 
+    //Разрешаем операции
+    Panel4.Enabled := True;
+    Panel3.Enabled := True;
+
     ProgressBar1.Style := pbstNormal;
     ProgressBar1.Repaint;
     Application.ProcessMessages;

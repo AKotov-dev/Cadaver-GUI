@@ -172,6 +172,10 @@ begin
     CompDir.Select(CompDir.Items[i]);
     CompDir.SetFocus;
 
+    //Разрешаем операции
+    Panel4.Enabled := True;
+    Panel3.Enabled := True;
+
     //Останов индикатора
     ProgressBar1.Style := pbstNormal;
     ProgressBar1.Repaint;

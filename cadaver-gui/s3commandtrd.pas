@@ -106,9 +106,6 @@ begin
 
     //Метка отмены копирования
     Panel4.Caption := '';
-    //Разрешаем копирование
-    Panel4.Enabled := True;
-    Panel3.Enabled := True;
 
     //Обновление каталогов назначения (выборочно)
     if left_panel then
