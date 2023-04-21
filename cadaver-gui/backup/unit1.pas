@@ -172,7 +172,7 @@ begin
     CompDir.Select(CompDir.Items[i]);
     CompDir.SetFocus;
 
-        //Разрешаем копирование
+    //Разрешаем операции
     Panel4.Enabled := True;
     Panel3.Enabled := True;
 

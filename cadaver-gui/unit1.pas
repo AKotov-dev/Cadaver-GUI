@@ -278,7 +278,7 @@ begin
           '''' + ' ' + '''' + ExtractFilePath(CompDir.GetPathFromNode(
           CompDir.Selected)) + SDBox.Items[i] + '''' + '\n"'
       else
-        c := '"Сrawling the directory: ' + SDBox.Items[i] + '\n"';
+        c := '"Bypass the directory: ' + SDBox.Items[i] + '\n"';
 
       cmd := c + cmd;
     end;
