@@ -75,7 +75,7 @@ var
   server: ansistring; //Сервер, глобально
 
 resourcestring
-  SDelete = 'Delete selected object(s)?';
+  SDelete = 'Delete selected objects?';
   SOverwriteObject = 'Overwrite existing objects?';
   SObjectExists = 'The folder already exists!';
   SCreateDir = 'Create directory';
@@ -177,9 +177,9 @@ begin
     Panel3.Enabled := True;
 
     //Останов индикатора
+    Application.ProcessMessages;
     ProgressBar1.Style := pbstNormal;
     ProgressBar1.Repaint;
-    Application.ProcessMessages;
   except;
     //Если сбой - перечитать корень
     UpdateBtn.Click;

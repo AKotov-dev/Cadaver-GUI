@@ -88,9 +88,9 @@ begin
 
     //Метка отмены копирования
     Panel4.Caption := SCancelCopyng;
+    Application.ProcessMessages;
     ProgressBar1.Style := pbstMarquee;
     ProgressBar1.Repaint;
-    Application.ProcessMessages;
   end;
 end;
 
@@ -100,9 +100,9 @@ begin
   with MainForm do
   begin
     //Останов индикатора
+    Application.ProcessMessages;
     MainForm.ProgressBar1.Style := pbstNormal;
     MainForm.ProgressBar1.Repaint;
-    Application.ProcessMessages;
 
     //Метка отмены копирования
     Panel4.Caption := '';

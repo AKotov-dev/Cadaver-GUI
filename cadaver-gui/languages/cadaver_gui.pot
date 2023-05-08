@@ -121,7 +121,7 @@ msgid "Create directory"
 msgstr ""
 
 #: unit1.sdelete
-msgid "Delete selected object(s)?"
+msgid "Delete selected objects?"
 msgstr ""
 
 #: unit1.sinputname

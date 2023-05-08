@@ -20,6 +20,7 @@ type
 
     procedure UpdateSDBox;
     procedure ShowProgress;
+    procedure StopProgress;
 
   end;
 
@@ -83,7 +84,7 @@ begin
     Synchronize(@UpdateSDBox);
 
   finally
-    // Synchronize(@HideProgress);
+    Synchronize(@StopProgress);
     S.Free;
     ExProcess.Free;
     Terminate;
@@ -93,9 +94,24 @@ end;
 //Начало операции
 procedure StartLSFolder.ShowProgress;
 begin
+  Application.ProcessMessages;
   MainForm.ProgressBar1.Style := pbstMarquee;
   MainForm.ProgressBar1.Repaint;
-  Application.ProcessMessages;
+end;
+
+//Конец операции
+procedure StartLSFolder.StopProgress;
+begin
+  with MainForm do
+  begin
+    //Разрешаем операции
+    Panel4.Enabled := True;
+    Panel3.Enabled := True;
+
+    Application.ProcessMessages;
+    ProgressBar1.Style := pbstNormal;
+    ProgressBar1.Repaint;
+  end;
 end;
 
 { БЛОК ВЫВОДА ls в SDBox }
@@ -115,14 +131,6 @@ begin
     //Если список не пуст - курсор в "0"
     if SDBox.Count <> 0 then
       SDBox.ItemIndex := 0;
-
-    //Разрешаем операции
-    Panel4.Enabled := True;
-    Panel3.Enabled := True;
-
-    ProgressBar1.Style := pbstNormal;
-    ProgressBar1.Repaint;
-    Application.ProcessMessages;
   end;
 end;
 

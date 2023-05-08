@@ -177,9 +177,9 @@ begin
     Panel3.Enabled := True;
 
     //Останов индикатора
+    Application.ProcessMessages;
     ProgressBar1.Style := pbstNormal;
     ProgressBar1.Repaint;
-    Application.ProcessMessages;
   except;
     //Если сбой - перечитать корень
     UpdateBtn.Click;
@@ -278,7 +278,7 @@ begin
           '''' + ' ' + '''' + ExtractFilePath(CompDir.GetPathFromNode(
           CompDir.Selected)) + SDBox.Items[i] + '''' + '\n"'
       else
-        c := '"Сrawling the directory: ' + SDBox.Items[i] + '\n"';
+        c := '"Bypass the directory: ' + SDBox.Items[i] + '\n"';
 
       cmd := c + cmd;
     end;

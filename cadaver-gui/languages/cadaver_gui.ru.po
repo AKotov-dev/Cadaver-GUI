@@ -91,7 +91,7 @@ msgstr "О программе"
 
 #: tmainform.mkpcdirbtn.hint
 msgid "Create new folder"
-msgstr "Создать новую директорию"
+msgstr "Создать новый каталог"
 
 #: tmainform.panel1.caption
 msgid "Panel1"
@@ -139,8 +139,8 @@ msgid "Create directory"
 msgstr "Создать директорию"
 
 #: unit1.sdelete
-msgid "Delete selected object(s)?"
-msgstr "Удалить выбранный объект(ы)?"
+msgid "Delete selected objects?"
+msgstr "Удалить выбранные объекты?"
 
 #: unit1.sinputname
 msgid "Enter the name:"
@@ -157,7 +157,7 @@ msgstr "Каталог уже существует!"
 
 #: unit1.soverwriteobject
 msgid "Overwrite existing objects?"
-msgstr "Перезаписать существующий объект(ы)?"
+msgstr "Перезаписать существующие объекты?"
 
 #: unit1.srename
 msgid "Rename an object"

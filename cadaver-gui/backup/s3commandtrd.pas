@@ -90,7 +90,6 @@ begin
     Panel4.Caption := SCancelCopyng;
     ProgressBar1.Style := pbstMarquee;
     ProgressBar1.Repaint;
-    Application.ProcessMessages;
   end;
 end;
 
@@ -102,7 +101,7 @@ begin
     //Останов индикатора
     MainForm.ProgressBar1.Style := pbstNormal;
     MainForm.ProgressBar1.Repaint;
-    Application.ProcessMessages;
+ //   Application.ProcessMessages;
 
     //Метка отмены копирования
     Panel4.Caption := '';
@@ -130,8 +129,8 @@ begin
   //Курсор в конец текста
   MainForm.LogMemo.SelStart := Length(MainForm.LogMemo.Text);
 
-  //Если строк > 1000 - очистить (файл может быть большим)
-  if MainForm.LogMemo.Lines.Count > 1000 then MainForm.LogMemo.Clear;
+  //Если строк > 500 - очистить (файл может быть большим)
+  if MainForm.LogMemo.Lines.Count > 500 then MainForm.LogMemo.Clear;
 end;
 
 end.

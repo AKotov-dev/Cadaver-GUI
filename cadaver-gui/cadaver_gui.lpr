@@ -15,7 +15,7 @@ uses
 
 begin
   RequireDerivedFormResource := True;
-  Application.Title:='Cadaver-GUI v0.9';
+  Application.Title:='Cadaver-GUI v1.0';
   Application.Scaled:=True;
   Application.Initialize;
   Application.CreateForm(TMainForm, MainForm);
